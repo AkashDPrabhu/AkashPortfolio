@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+@import url('https://fonts.googleapis.com/css?family=Inconsolata&display=swap');
+
+html{
+
+  font-size: 30px;
+  font-family: 'Inconsolata', monospace !important;
+}
+
+body{
+  background-color: black !important;
+  color: green !important;
+}
+
+h1{
+  font-size: 4rem;
+}
