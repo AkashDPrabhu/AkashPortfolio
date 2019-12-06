@@ -24,10 +24,6 @@
         color: #00FF00 !important;
       }
 
-      h1{
-        font-size: 3.5rem;
-      }
-
       img {
         display: block;
         margin-left: auto;
@@ -44,7 +40,19 @@
   <body style="font-family: Courier, Courier New, Monospace ;">
     <div class="container" style="padding-top:15vh">
       <img src="anon-hacker.png" alt="logo"  height="300" width="300" >
-      <h1 class="text-center text-warp">root@Akash_D:~#<span id="blink">&#x25AE;</span></h1>
+
+      <div class="d-none d-md-block">
+        <h1 class="text-center text-warp text-break" style="font-size: 3rem;">
+          root@Akash_D:~#<span class="blink">&#x25AE;</span>
+
+        </h1>
+      </div>
+
+      <div class="d-sm-block d-md-none">
+        <h1 class="text-center text-warp text-break" style="font-size: 1.2rem;">
+          root@Akash_D:~#<span class="blink">&#x25AE;</span>
+        </h1>
+      </div>
 
         <center>
           <q class="text-center" cite="">Mother and Motherland are greater than Heaven</q> <br><br><br><br>
@@ -161,7 +169,7 @@
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
     <script type="text/javascript">
-          var blink = document.getElementById('blink');
+          var blink = document.getElementsByClassName('blink')[0];
           setInterval(function() {
              blink.style.opacity = (blink.style.opacity == 0 ? 1 : 0);
           }, 400);
